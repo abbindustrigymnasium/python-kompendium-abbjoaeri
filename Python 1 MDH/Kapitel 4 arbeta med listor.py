@@ -38,5 +38,22 @@
 
 # print(summa)
 
+# #4.3
+# registrerade = ["Anna", "Eva", "Erik", "Lars", "Karl"]
+# avanmälningar = ["Anna", "Erik", "Karl"]
 
+# for namn in avanmälningar: # definerar alla platser i avanmälningar som namn
+#     del registrerade[(registrerade.index(namn))] # raderar alla platser i registrerarde som har ett namn i avanmälningar. 
 
+# print(registrerade)
+
+#4.4
+
+# förnamn = ["Maria", "Erik", "Karl"]
+# efternamn = ["Svensson", "Karlsson", "Andersson"]
+
+# for namn in förnamn: # Varje förnamn
+#     for name in efternamn: #Varje efternamn
+#         print(namn + " " + name) # Skriver ut varje förnamn mellanslag varje efternamn
+
+#
