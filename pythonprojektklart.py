@@ -46,6 +46,7 @@ while frågenummer < 11:
         print("Du har nu " + str(antalrätt) + " rätt av " + str(frågenummer) + " möjliga. Det innebär att det återstår " + str(antalfrågorkvar) + " frågor. Lycka till!") # skriver ut nuvarande resultat och eventuella frågor som återstår
         print("")
     else: # om frågenummer är 8 och spelet är slut så skrivs det ut att spelet är slut. 
+        print("")
         print("Spelet är nu avslutat, du fick " + str(antalrätt) + " rätt av " + str(frågenummer) + " möjliga. Bra jobbat! Spela gärna igen!") # skriver ut resultat
         print("")
         break # bryter hela loopen (och avslutar spelet) om användaren har svarat på alla frågor

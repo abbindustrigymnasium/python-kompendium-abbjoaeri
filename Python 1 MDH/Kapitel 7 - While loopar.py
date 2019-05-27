@@ -2,22 +2,22 @@
 
 # #7.1
 
-# tal = int(input("Ange en multiplikationstabell: "))
+tal = int(input("Ange en multiplikationstabell: "))
 
-# num = 0
-# kolla = 0
+num = 0
+kolla = 0
 
-# while True:
-#     print(tal * num)
-#     num += 1
-#     kolla += 1
-#     if kolla == 3:
-#         jaellernej = input("Vill du fortsätta? ")
-#         if jaellernej == "ja":
-#             kolla = 0
-#             continue
-#         else:
-#             break
+while True:
+    print(tal * num)
+    num += 1
+    kolla += 1
+    if kolla == 3:
+        jaellernej = input("Vill du fortsätta? ")
+        if jaellernej == "ja":
+            kolla = 0
+            continue
+        else:
+            break
             
 
 #7.2

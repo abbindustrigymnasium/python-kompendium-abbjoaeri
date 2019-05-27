@@ -19,7 +19,7 @@
 
 #     else: print("Du liknar ingen kändis.")
 
-#5.2
+#5.2 # dålig version först, se version 2 längre ned för mer dynamisk kod
 # global a
 # a = 0
 
@@ -88,27 +88,27 @@
 
 #5.2 alternativt lösningssätt
 
-# namn = str(input("Ange ditt namn här: "))
+# namn = str(input("Ange ditt namn här: ")) # input för namn och ålder
 # ålder = str(input("Ange din ålder här: "))
 
-# a = [14, 13, 12, 11.5, 11, 11, 10.5, 10, 10, 10, 9.5, 9, 9, 9, 9, 8.5, 8]
-# if ålder < 17:
+# a = [14, 13, 12, 11.5, 11, 11, 10.5, 10, 10, 10, 9.5, 9, 9, 9, 9, 8.5, 8] # skapar array med timmar
+# if ålder < 17: # checkar om åldern är mindre än 17
 #     t = a[ålder - 1]
 # else: 
-#     t = 8
+#     t = 8 # annars är det 8 timamr (för alla vuxna)
 
-# print("Hallå " + namn + " enligt vårdguidens rekommendationer behöver individer i din ålder (" + ålder + " år) sova minst " + t + " timmar per natt.")
+# print("Hallå " + namn + " enligt vårdguidens rekommendationer behöver individer i din ålder (" + ålder + " år) sova minst " + t + " timmar per natt.") # skriver ut resultat
 
 #5.3
 
-land = input("Skriv in ditt land: ")
+land = input("Skriv in ditt land: ") # skriver in sitt land
 land = land.capitalize()
 norden = ['Danmark', 'Finland', 'Island', 'Norge', 'Sverige']
 storbritannien = ['England', 'Nordirland', 'Skottland', 'Wales']
 
-if land in norden:
+if land in norden: # if sats som kollar om användarens land ligger i olika delar av Europa. m
     print("Ditt land " + land + " ligger i Norden.")
-elif land in storbritannien:
+elif land in storbritannien: # elif är en specifik else sats (annars om)
     print("Ditt land " + land + " ligger i Storbritannien.")
-else:
+else: # else sats som kollar om inget stämmer och vad det isåfall innebär
     print("Ditt land " + land + " ligger varken i Storbritannien eller Norden.")
