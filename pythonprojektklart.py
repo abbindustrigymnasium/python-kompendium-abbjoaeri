@@ -10,7 +10,7 @@ antalrätt = 0 # variabel för antal rätt svar hos användaren
 frågenummer = 0 # variabel för antalet frågor användaren har fått
 antalfrågorkvar = 8 # variabel för hur många frågor som återstår så programmet och användaren vet det
 
-frågor = [] # skapar arrays med frågor och svar. 
+frågor = [] # skapar arrays för frågor och svar. 
 rättsvar = []
 felsvar = []
 
