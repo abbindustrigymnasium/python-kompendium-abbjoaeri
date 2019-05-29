@@ -37,8 +37,10 @@ while frågenummer < 11:
     användarenssvar = input("Skriv ditt svar här: ")
     if (användarenssvar.lower().title() == rättsvar[tal]): # title
         antalrätt += 1 # adderar 1 till antalrätt varje gång användaren svarar rätt
+        print("")
         print(str(användarenssvar.lower().title()) + " är rätt svar, bra jobbat!" ) # skriver ut om det är rätt svar
     else:
+        print("")
         print(str(användarenssvar.lower().title()) + " är tyvärr fel svar. Rätt svar är " + str(rättsvar[tal]) + ". du sätter nästa!") # skriver ut användarens felaktiga svar och det rätta svaret
     antalfrågorkvar -= 1  # tar bort hur många frågor som återstår efter varje fråga. För att både användaren och programmet ska veta när spelet är slut. 
     if frågenummer < 8: # Kollar så att spelet inte är slut. 
