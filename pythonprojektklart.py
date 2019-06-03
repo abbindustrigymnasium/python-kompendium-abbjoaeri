@@ -20,12 +20,12 @@ for i in API['results']: # Går in i api:n och results
     felsvar.append(i['incorrect_answers']) # skapar array med fel svar
 
 print(" ------ SPORT FRÅGESPORT ------") # skriver ut information och hur spelet går till. 
-print("Välkommen till sportfrågesporten. Det finns åtta frågor med fyra svars alternativ på varje.")
+print("Välkommen till sportfrågesporten. Det finns åtta frågor med fyra svarsalternativ på varje.")
 print("Skriv in det alternativ du tror är det rätta i svarsfältet.")
 print("Lycka till och ha kul!")
 print("")
 
-while frågenummer < 11:
+while True:
     tal = random.randint(1, antalfrågorkvar) # randomiserar tal mellan 1 och antalfrågorkvar för att hämta random fråga och inte samma varje gång, dessutom gör det så att det kommer nya frågor hela tiden och samma fråga inte kan komma flera gånger. 
     allalternativ = felsvar[tal] # skapar en array med felsvar (lägger till rätt svar på nästa rad) för att de ska kunna randomiseras och inte komma i samma ordning hela tiden. 
     allalternativ.append(rättsvar[tal])
